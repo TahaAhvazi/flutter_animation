@@ -36,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _controller = AnimationController(
       vsync: this,
@@ -78,7 +77,6 @@ class _MyHomePageState extends State<MyHomePage>
                 return GestureDetector(
                   onTap: () => setState(() {
                     myNumber = index;
-                    print("$index");
                   }),
                   onDoubleTap: () => setState(() {
                     myNumber == index;
@@ -124,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage>
               turns: _rotateAnimation,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 4, 202, 252),
+                  color: const Color.fromARGB(255, 4, 202, 252),
                   borderRadius: BorderRadius.circular(12.0),
                 ),
                 height: 100,
